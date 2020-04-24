@@ -1,0 +1,61 @@
+server.send(200, "text/html", "
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="icon" href="data:image/ico;base64,aWNv" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>喂猫机控制主页</title>
+    <style>
+      body {
+        background-color: #ece4d9;
+      }
+
+      .k {
+        width: 100%;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 100px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+
+      .c {
+        text-align: center;
+      }
+
+      .b {
+        font-size: 100px;
+      }
+
+      .c1 {
+        background-color: #ffb6b9;
+      }
+
+      .c2 {
+        background-color: #bbded6;
+      }
+
+      .c3 {
+        background-color: #8ac6d1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="border-radius: 25px; border: 5px solid #555; padding: 20px; width: auto; height: auto;">
+      <iframe src="//www.17sucai.com/preview/1424582/2019-12-03/m/demo.html" frameborder="0" width="100%" height="100%" style="z-index: -1; position: absolute;"></iframe>
+      <h1 class="c b">喂猫机控制</h1>
+      <h3 class="c">说明：逗猫：单次激光移动；投食：下落电机工作10秒；Biu：弹射电机工作10秒。</h3>
+      <h1>
+        <a href="/RandomMove"><button class="k c1">逗猫</button></a><a href="/Drop"><button class="k c2">投食</button></a><a href="/Biu"><button class="k c3">Biu~</button></a>
+      </h1>
+    </div>
+  </body>
+</html>
+");
